@@ -1,0 +1,60 @@
+div.wpcf7-response-output,
+div.wpcf7-validation-errors {
+	margin: 1em 0 0 !important;
+	position: relative;
+	z-index: 8;
+}
+
+.wpcf7-not-valid {
+	&, input& {
+		border-color: #D94729;
+	}
+}
+
+.wpcf7-not-valid-tip {
+	display: none !important;
+}
+
+div.wpcf7 {
+	.wpcf7-form {
+		display: block;
+		margin: 0;
+
+		.wpcf7-submit {
+			margin-top: 0;
+
+			&:hover {
+				background-color: @accent-color-2;
+			}
+		}
+	}
+}
+
+.vamtam-rsvp-form {
+	label {
+		font-size: 13px;
+		color: @accent-color-8;
+	}
+
+	input[type="text"],
+	input[type="number"],
+	select {
+		font-size: 20px;
+		padding: 17px;
+		background: @accent-color-8 !important;
+		color: @accent-color-1;
+	}
+
+	.wpcf7-form-control-wrap.your-name {
+		width: 100%;
+	}
+
+	.ajax-loader {
+		display: none;
+	}
+}
+
+span.wpcf7-form-control-wrap {
+	display: block;
+	margin-bottom: 20px;
+}
